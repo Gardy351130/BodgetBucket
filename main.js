@@ -1,3 +1,4 @@
+console.log("main.js is loaded");
 function startVoice() {
   const output = document.getElementById("output");
   const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
