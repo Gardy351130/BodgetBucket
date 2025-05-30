@@ -1,0 +1,30 @@
+﻿body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #f4f4f4;
+  color: #333;
+}
+
+
+h1 {
+  color: #0077cc;
+}
+
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
+#output {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+}
