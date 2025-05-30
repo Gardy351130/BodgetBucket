@@ -1,0 +1,18 @@
+function startVoice() {
+  const output = document.getElementById("output");
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  recognition.start();
+
+  recognition.onresult = function(event) {
+    const transcript = event.results[0][0].transcript;
+    output.innerHTML += `<p>You said: ${transcript}</p>`;
+  };
+
+  recognition.onerror = function(event) {
+    output.innerHTML += `<p style="color:red;">Error: ${event.error}</p>`;
+  };
+}
